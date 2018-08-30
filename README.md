@@ -1,3 +1,3 @@
-## Flappy Bird
+# Flappy Bird
 
 P5.js
