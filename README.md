@@ -1,3 +1,3 @@
 # Flappy Bird
 
-P5.js
+Simple p5.js `Flappy Bird` of style game.
