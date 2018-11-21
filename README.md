@@ -6,10 +6,10 @@ Simple p5.js `Flappy Bird` of style game.
 
 https://julienshim.github.io/flappy-bird/
 
+**Note: Currently lacks auto re-start. Must manually refresh browser for now.**
+
 ### GIF
 <img src="https://raw.githubusercontent.com/julienshim/flappy-bird/master/demo.gif" width="320" />
-
-**Note: Currently lacks auto re-start. Must manually refresh browser for now.**
 
 ## Requirements
 
