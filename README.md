@@ -2,6 +2,12 @@
 
 Simple p5.js `Flappy Bird` of style game.
 
+## Demo (via GitHub Pages)
+
+https://julienshim.github.io/flappy-bird/
+
+**Note: Currently lacks auto re-start. Must manually refresh browser for now.**
+
 ## Requirements
 
 * Browser
