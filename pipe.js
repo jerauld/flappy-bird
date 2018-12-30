@@ -1,26 +1,38 @@
 function Pipe() {
 
-    var spacing = random(50, height / 4);
-    var centerY = random(spacing, height-spacing);
+    const spacing = random(50, height / 3);
+    const centerY = random(spacing, height-spacing);
 
     this.top = centerY - spacing / 2;
     this.bottom = height - (centerY + spacing / 2);
     this.x = width;
     this.w = 20;
     this.speed = 2;
+    this.passed = false;
 
     this.highlight = false;
 
     this.hits = function(bird) {
+        // Upper left is 0,0
         if(bird.y < this.top || bird.y > height - this.bottom) {
             if (bird.x > this.x && bird.x < this.x + this.w) {
                 this.highlight = true;
+                this.passed = true;
                 noLoop();
-                console.log(noLoop());
                 return true;
             }
         }
         this.highlight = false;
+        return false;
+    }
+
+    this.pass = function(bird) {
+        // Accounting +20 for width of pipe bird my clear to score++
+        // Otherwise, a bird touching a pipe would score++
+        if(bird.x > (this.x + 20) && !this.passed) {
+            this.passed = true;
+            return true;
+        }
         return false;
     }
 
